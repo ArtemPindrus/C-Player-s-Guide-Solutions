@@ -1,4 +1,4 @@
-﻿namespace CSharpPlayersGuide.GameOfFifteen {
+﻿namespace GameOfFifteen {
     public readonly struct Vector2 {
         public readonly int X;
         public readonly int Y;

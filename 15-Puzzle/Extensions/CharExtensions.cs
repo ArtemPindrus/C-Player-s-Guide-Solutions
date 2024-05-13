@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharpPlayersGuide.GameOfFifteen {
+﻿namespace GameOfFifteen.Extensions {
     public static class CharExtensions {
         public static Direction ToDirection(this char c) {
             return c switch {

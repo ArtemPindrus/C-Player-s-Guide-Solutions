@@ -1,7 +1,7 @@
 ﻿using System.Runtime.CompilerServices;
 using System.Text;
 
-namespace CSharpPlayersGuide.GameOfFifteen {
+namespace GameOfFifteen {
     public enum Direction { Left, Right, Up, Down }
 
     public class Grid {

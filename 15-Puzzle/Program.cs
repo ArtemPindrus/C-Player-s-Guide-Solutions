@@ -1,6 +1,7 @@
 ﻿using ConsoleLibrary;
+using GameOfFifteen.Extensions;
 
-namespace CSharpPlayersGuide.GameOfFifteen {
+namespace GameOfFifteen {
     internal class Program {
         static void Main() {
             GameOfFifteen game = new(3);
