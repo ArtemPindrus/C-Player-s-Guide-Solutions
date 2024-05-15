@@ -3,13 +3,9 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
-    <RootNamespace>Colored_Console</RootNamespace>
+    <RootNamespace>Better_Random</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\ColoredConsoleLibrary\ConsoleLibrary.csproj" />
-  </ItemGroup>
 
 </Project>

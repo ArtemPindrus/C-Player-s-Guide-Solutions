@@ -11,8 +11,7 @@ namespace HuntingTheManticore {
         private int CurrentRoundDamage {
             get {
                 if (currentRound % 3 == 0 && currentRound % 5 == 0) return 10;
-                else if (currentRound % 3 == 0 || currentRound % 5 == 0) return 3;
-                else return 1;
+                else return currentRound % 3 == 0 || currentRound % 5 == 0 ? 3 : 1;
             }
         }
 
