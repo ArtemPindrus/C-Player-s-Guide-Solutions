@@ -1,4 +1,5 @@
 ﻿using ConsoleLibrary;
+using Hangman;
 using System.Text;
 
 namespace HangmanGame {
@@ -10,6 +11,9 @@ namespace HangmanGame {
 
         public HangmanGame(string pathToFileWithWords, int maxWrongGuesses, int minWordSize) {
             string fileText = File.ReadAllText(pathToFileWithWords);
+
+            if (fileText == string.Empty) throw new FileEmptyException("Path refers to empty file!");
+
             string fileTextNoPunct = string.Concat(fileText.Where(c => !char.IsPunctuation(c)));
 
             _words = new(fileTextNoPunct.Split(' ', StringSplitOptions.TrimEntries).Where(s => s.Length >= minWordSize));
